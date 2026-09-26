@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320">
+  <defs>
+    <radialGradient id="glow" cx="1090" cy="160" r="360" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#C8285E" stop-opacity=".10"/><stop offset="1" stop-color="#C8285E" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sw" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#C8285E" stop-opacity="0"/><stop offset="1" stop-color="#C8285E" stop-opacity=".35"/></linearGradient>
+    <clipPath id="clip"><rect width="1280" height="320" rx="24"/></clipPath>
+  </defs>
+  <g clip-path="url(#clip)">
+    <rect width="1280" height="320" fill="#FBF8F9"/>
+    <rect width="1280" height="320" fill="url(#glow)"/>
+    <circle cx="1090" cy="160" r="60" fill="none" stroke="#C8285E" stroke-opacity="0.35" stroke-width="1.5"/><circle cx="1090" cy="160" r="110" fill="none" stroke="#C8285E" stroke-opacity="0.25" stroke-width="1.5"/><circle cx="1090" cy="160" r="160" fill="none" stroke="#C8285E" stroke-opacity="0.17" stroke-width="1.5"/><circle cx="1090" cy="160" r="210" fill="none" stroke="#C8285E" stroke-opacity="0.11" stroke-width="1.5"/><circle cx="1090" cy="160" r="260" fill="none" stroke="#C8285E" stroke-opacity="0.07" stroke-width="1.5"/>
+    <path d="M1090 160L1090 -100A260 260 0 0 1 1315 30z" fill="url(#sw)"/>
+    <circle cx="1170" cy="95" r="6" fill="#C8285E"/><circle cx="1010" cy="250" r="4.5" fill="#C8285E" fill-opacity=".7"/><circle cx="1200" cy="230" r="3.5" fill="#C8285E" fill-opacity=".5"/>
+  </g>
+  <rect x=".75" y=".75" width="1278.5" height="318.5" rx="23.5" fill="none" stroke="#EADDE3" stroke-width="1.5"/>
+  <g transform="translate(96,72) scale(1.25)"><defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FF7AA2"/><stop offset=".55" stop-color="#D42F66"/><stop offset="1" stop-color="#8E1F52"/>
+    </linearGradient>
+    <radialGradient id="bsw" cx="64" cy="66" r="22" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity=".95"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="biris"><circle cx="64" cy="66" r="19"/></clipPath>
+  </defs>
+  <rect width="128" height="128" rx="30" fill="url(#bg)"/>
+  <rect x="1" y="1" width="126" height="126" rx="29" fill="none" stroke="#fff" stroke-opacity=".18" stroke-width="2"/>
+  <path d="M18 66c11-17 27-26 46-26s35 9 46 26c-11 17-27 26-46 26S29 83 18 66z" fill="none" stroke="#fff" stroke-width="7" stroke-linejoin="round"/>
+  <circle cx="64" cy="66" r="19" fill="#fff" fill-opacity=".16" stroke="#fff" stroke-width="5"/>
+  <g clip-path="url(#biris)"><path d="M64 66L64 44A22 22 0 0 1 84 57z" fill="url(#bsw)"/></g>
+  <circle cx="64" cy="66" r="6" fill="#fff"/>
+  <circle cx="92" cy="30" r="5" fill="#fff"/></g>
+  <text x="300" y="138" font-family="Segoe UI, -apple-system, Helvetica, Arial, sans-serif" font-size="76" font-weight="800" letter-spacing="-2" fill="#1F191C">Spy<tspan fill="#C8285E">gram</tspan></text>
+  <text x="302" y="186" font-family="Segoe UI, -apple-system, Helvetica, Arial, sans-serif" font-size="25" fill="#6F646A">Descubre quién no te sigue de vuelta en Instagram.</text>
+  <g transform="translate(300,224)"><rect width="231" height="34" rx="17" fill="#FFFFFF" stroke="#EADDE3"/><circle cx="17" cy="17" r="4" fill="#C8285E"/><text x="30" y="22.5" font-size="15" fill="#6F646A" font-family="Segoe UI, -apple-system, Helvetica, Arial, sans-serif" font-weight="500">Script para el navegador</text></g><g transform="translate(542.8,224)"><rect width="165" height="34" rx="17" fill="#FFFFFF" stroke="#EADDE3"/><circle cx="17" cy="17" r="4" fill="#C8285E"/><text x="30" y="22.5" font-size="15" fill="#6F646A" font-family="Segoe UI, -apple-system, Helvetica, Arial, sans-serif" font-weight="500">100 % en español</text></g><g transform="translate(720.0,224)"><rect width="173" height="34" rx="17" fill="#FFFFFF" stroke="#EADDE3"/><circle cx="17" cy="17" r="4" fill="#C8285E"/><text x="30" y="22.5" font-size="15" fill="#6F646A" font-family="Segoe UI, -apple-system, Helvetica, Arial, sans-serif" font-weight="500">Sin instalar nada</text></g>
+</svg>

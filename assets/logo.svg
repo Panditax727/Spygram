@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FF7AA2"/><stop offset=".55" stop-color="#D42F66"/><stop offset="1" stop-color="#8E1F52"/>
+    </linearGradient>
+    <radialGradient id="sweep" cx="64" cy="66" r="22" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity=".95"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="iris"><circle cx="64" cy="66" r="19"/></clipPath>
+  </defs>
+  <rect width="128" height="128" rx="30" fill="url(#g)"/>
+  <rect x="1" y="1" width="126" height="126" rx="29" fill="none" stroke="#fff" stroke-opacity=".18" stroke-width="2"/>
+  <path d="M18 66c11-17 27-26 46-26s35 9 46 26c-11 17-27 26-46 26S29 83 18 66z" fill="none" stroke="#fff" stroke-width="7" stroke-linejoin="round"/>
+  <circle cx="64" cy="66" r="19" fill="#fff" fill-opacity=".16" stroke="#fff" stroke-width="5"/>
+  <g clip-path="url(#iris)"><path d="M64 66L64 44A22 22 0 0 1 84 57z" fill="url(#sweep)"/></g>
+  <circle cx="64" cy="66" r="6" fill="#fff"/>
+  <circle cx="92" cy="30" r="5" fill="#fff"/>
+</svg>

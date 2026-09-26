@@ -311,8 +311,11 @@ textarea#fallback{width:100%;min-height:120px;font-family:var(--mono);font-size:
     .b{font-size:10.5px;padding:1px 6px;border-radius:99px;margin-left:4px;background:#2a2229;color:#a79ba2}
     .b.v{background:#12304a;color:#6cb6ff}
     .b.w{background:#2e2412;color:#f0b44a}
-    .star{background:none;border:0;font-size:18px;color:#6f646a;padding:2px 6px}
+    .star{background:none;border:0;color:#6f646a;padding:4px;display:grid;place-items:center}
+    .star svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linejoin:round}
+    .star:hover{color:#a79ba2}
     .star.on{color:#f0b44a}
+    .star.on svg{fill:currentColor}
     .done{opacity:.4;text-decoration:line-through}
     .log{max-height:110px;overflow-y:auto;font:12px/1.4 ui-monospace,Consolas,monospace;color:#a79ba2;padding:8px 14px;background:#120f14;border-top:1px solid #3a2f36;white-space:pre-wrap}
     .firma{display:flex;justify-content:space-between;gap:8px;padding:6px 14px;font-size:11.5px;color:#8a7a83;background:#120f14;border-top:1px solid #2a2229}
@@ -470,7 +473,7 @@ textarea#fallback{width:100%;min-height:120px;font-family:var(--mono);font-size:
       const star = h('button', { class: 'star' + (S.whitelist.has(u.username) ? ' on' : ''), title: 'Lista blanca (nunca dejar de seguir)', on: { click: () => {
         S.whitelist.has(u.username) ? S.whitelist.delete(u.username) : (S.whitelist.add(u.username), S.selected.delete(u.pk));
         LS.set('whitelist', [...S.whitelist]); render();
-      } } }, '★');
+      } } }, starIcon());
       return h('div', { class: 'it' + (u.done ? ' done' : ''), 'data-pk': u.pk },
         canSelect ? cb : h('span'),
         avatar(u),
@@ -485,6 +488,16 @@ textarea#fallback{width:100%;min-height:120px;font-family:var(--mono);font-size:
     ...(V.length > 500 ? [h('div', { class: 'empty' }, `Mostrando 500 de ${V.length}. Usa el buscador para acotar.`)] : []));
     updBtn();
   }
+  function starIcon() {
+    const NS = 'http://www.w3.org/2000/svg';
+    const svg = document.createElementNS(NS, 'svg');
+    svg.setAttribute('viewBox', '0 0 24 24');
+    const p = document.createElementNS(NS, 'path');
+    p.setAttribute('d', 'M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9 6.8 19.6l1-5.8L3.5 9.7l5.9-.9z');
+    svg.append(p);
+    return svg;
+  }
+
   const picCache = new Map();
   function initials(u) {
     let hue = 0; for (const c of u.username) hue = (hue * 31 + c.charCodeAt(0)) % 360;
