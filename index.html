@@ -171,7 +171,7 @@ textarea#fallback{width:100%;min-height:120px;font-family:var(--mono);font-size:
     <h3 style="font-size:15px;margin-top:12px">En Android (Chrome)</h3>
     <ol>
       <li>Copia el marcador con el botón de arriba.</li>
-      <li>Guarda cualquier página como marcador (☆), edítalo, ponle de nombre <kbd>spygram</kbd> y pega el texto copiado en el campo URL.</li>
+      <li>Guarda cualquier página como marcador (icono de estrella de la barra), edítalo, ponle de nombre <kbd>spygram</kbd> y pega el texto copiado en el campo URL.</li>
       <li>Abre <b>instagram.com</b> en Chrome (no la app) con la sesión iniciada.</li>
       <li>Escribe <kbd>spygram</kbd> en la barra de direcciones y toca la sugerencia del marcador. Si escribes y pulsas Intro, se hace una búsqueda y no funciona.</li>
     </ol>
@@ -580,7 +580,7 @@ textarea#fallback{width:100%;min-height:120px;font-family:var(--mono);font-size:
           console.warn('[Spygram] Falló el unfollow de @' + u.username, res.info);
         }
       } catch (e) {
-        if (e.block) { log('⚠ Instagram ha bloqueado temporalmente esta acción. Me detengo. Espera 24–48 h antes de seguir.'); break; }
+        if (e.block) { log('Aviso: Instagram ha bloqueado temporalmente esta acción. Me detengo. Espera 24–48 h antes de seguir.'); break; }
         if (e.message === 'detenido') { log('Detenido por ti.'); break; }
         fallosSeguidos++;
         log(`Error con @${u.username}: ${e.message}`);

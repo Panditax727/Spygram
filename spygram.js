@@ -348,7 +348,7 @@
           console.warn('[Spygram] Falló el unfollow de @' + u.username, res.info);
         }
       } catch (e) {
-        if (e.block) { log('⚠ Instagram ha bloqueado temporalmente esta acción. Me detengo. Espera 24–48 h antes de seguir.'); break; }
+        if (e.block) { log('Aviso: Instagram ha bloqueado temporalmente esta acción. Me detengo. Espera 24–48 h antes de seguir.'); break; }
         if (e.message === 'detenido') { log('Detenido por ti.'); break; }
         fallosSeguidos++;
         log(`Error con @${u.username}: ${e.message}`);

@@ -1,4 +1,4 @@
-<h1 align="center">🕵️ Spygram</h1>
+<h1 align="center">Spygram</h1>
 
 <p align="center">
   <b>Descubre quién no te sigue de vuelta en Instagram.</b><br>
@@ -14,18 +14,18 @@
 
 ---
 
-## ✨ Qué hace
+## Qué hace
 
 - **No te siguen:** cuentas que sigues pero que no te siguen de vuelta.
 - **No sigues de vuelta:** cuentas que te siguen y tú no sigues.
 - **Te dejaron de seguir:** compara con tu escaneo anterior y te dice quién se fue.
-- **Lista blanca (★):** marca famosos, marcas o amigos para que nunca aparezcan como candidatos.
+- **Lista blanca:** marca famosos, marcas o amigos para que nunca aparezcan como candidatos.
 - **Dejar de seguir con pausas seguras:** esperas aleatorias, descansos cada 10 cuentas y límite por sesión. *(experimental, ver abajo)*
 - **Buscador y filtros:** por usuario o nombre, y ocultar cuentas verificadas.
 - **Copiar la lista** de usuarios con un clic.
 - **Todo en español** y sin servidores: tus datos no salen de tu navegador.
 
-## 📦 Archivos
+## Archivos
 
 | Archivo | Para qué sirve |
 |---|---|
@@ -35,7 +35,7 @@
 
 ---
 
-## 🖥️ Uso en el ordenador (Chrome, Edge, Brave, Firefox)
+## Uso en el ordenador (Chrome, Edge, Brave, Firefox)
 
 1. Abre **[instagram.com](https://www.instagram.com)** e inicia sesión.
 2. Pulsa **`F12`** (o `Ctrl + Mayús + J`) y ve a la pestaña **Consola**.
@@ -43,15 +43,15 @@
 4. Copia todo el contenido de [`spygram.js`](spygram.js), pégalo en la consola y pulsa Intro.
 5. En el panel que aparece a la derecha, pulsa **Escanear**.
 
-> 💡 **Tip:** en Chrome/Brave/Edge puedes guardarlo como *Snippet* (DevTools → Sources → Snippets) y ejecutarlo con `Ctrl + Enter` cada vez que quieras.
+> **Consejo:** en Chrome/Brave/Edge puedes guardarlo como *Snippet* (DevTools → Sources → Snippets) y ejecutarlo con `Ctrl + Enter` cada vez que quieras.
 
-## 📱 Uso en el móvil
+## Uso en el móvil
 
 <details>
 <summary><b>Android (Chrome)</b></summary>
 
 1. Copia todo el contenido de [`spygram-marcador.txt`](spygram-marcador.txt).
-2. Guarda cualquier página como marcador (☆), edítalo, ponle de nombre `spygram` y pega el texto en el campo **URL**.
+2. Guarda cualquier página como marcador (icono de estrella de la barra), edítalo, ponle de nombre `spygram` y pega el texto en el campo **URL**.
 3. Abre **instagram.com** en Chrome (no en la app) con tu sesión iniciada.
 4. Escribe `spygram` en la barra de direcciones y **toca la sugerencia del marcador**. Si pulsas Intro, Chrome hace una búsqueda y no funciona.
 </details>
@@ -65,7 +65,7 @@
 4. Abre **instagram.com** en Safari con tu sesión iniciada, abre Marcadores y toca **Spygram**.
 </details>
 
-## 🔒 Modo sin iniciar sesión (100 % seguro)
+## Modo sin iniciar sesión
 
 Si no quieres ejecutar nada en tu cuenta, abre [`index.html`](index.html) en el navegador y usa la descarga oficial de tus datos:
 
@@ -78,7 +78,7 @@ Este modo no toca tu cuenta en absoluto, así que no hay ningún riesgo de bloqu
 
 ---
 
-## ⚠️ Cómo usarlo sin que Instagram te limite
+## Cómo usarlo sin que Instagram te limite
 
 | Recomendación | Por qué |
 |---|---|
@@ -90,7 +90,7 @@ Este modo no toca tu cuenta en absoluto, así que no hay ningún riesgo de bloqu
 
 > **Estado del unfollow automático: experimental.** Instagram cambia sus rutas internas a menudo. Si ves `No se pudo con @usuario` en el registro del panel, el escaneo sigue funcionando: usa la lista y deja de seguir a mano desde el enlace de cada perfil. Spygram se detiene solo tras 3 fallos seguidos.
 
-## ❓ Preguntas frecuentes
+## Preguntas frecuentes
 
 <details>
 <summary><b>¿Es seguro pegar esto en la consola?</b></summary>
@@ -118,13 +118,13 @@ Si el panel ya está abierto, el script solo lo vuelve a mostrar. Recarga la pá
 
 ---
 
-## 👤 Autor
+## Autor
 
 Hecho por **[Panditax727](https://github.com/Panditax727)**.
 
-Si te sirvió, deja una ⭐ en el repo.
+Si te resulta útil, puedes darle una estrella al repositorio.
 
-## 📄 Aviso legal
+## Aviso legal
 
 © 2026 Panditax727. Todos los derechos reservados.
 
